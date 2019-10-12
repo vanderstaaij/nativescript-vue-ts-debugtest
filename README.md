@@ -104,6 +104,10 @@ To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetr
 To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"target/notification/onPaused","data":{"Versions.DebugAdapterCore":"6.7.46","aggregated.startTime":"[\"1570887715085\"]","aggregated.successful":"[\"true\"]","aggregated.timeTakenInMilliseconds":"[\"0.427983\"]"}}}
 ```
 
+Visual proof:
+![alt text](readme-images/breakpoint-hit-in-mixins-ts.png "Breakpoint hit in mixins.ts")
+
+
 ## Breakpoint setting in Vue file
 
 ```
