@@ -25,12 +25,13 @@ code base to focus on getting this to work.
 
 - Launch my app in debug mode from the shell and attach from VS Code
 - Launch my app in debug mode from VS Code directly
-- Set breakpoints
+- Set breakpoints in .ts files
 - Get application execution to halt on breakpoints in source .ts files
+- Get application execution to halt on _debugger;_ statements in both .ts files and .vue single file components
 
 ## What I'm not able to do:
 
-- Get application execution to halt on breakpoints in source .vue files
+- Get application execution to halt on Visual Studio code-set breakpoints in source .vue files
 
 ## What have I done so far?
 
