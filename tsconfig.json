@@ -22,7 +22,7 @@
                 "./node_modules/*"
             ]
         },
-        "sourceMap" : true
+        // "sourceMap" : true
     },
     "include": [
         "app/**/*"
