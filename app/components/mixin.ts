@@ -1,7 +1,9 @@
+import { FB } from "~/enums";
+
 export const mixin = {
     methods: {
         bar: () => {
-            console.log("bar");
+            console.log(FB.bar);
         }
     }
 };

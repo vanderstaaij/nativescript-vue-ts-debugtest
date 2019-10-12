@@ -19,6 +19,7 @@
 
 <script lang="ts">
 
+    import { FB } from "~/enums";
     import { mixin } from "./mixin";
 
     export default {
@@ -30,7 +31,7 @@
         },
         methods: {
             foo : () => {
-                console.log("foo");
+                console.log(FB.foo);
             }
         }
     };
