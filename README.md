@@ -8,8 +8,8 @@ Repo for testing debugging with:
 - Webpack
 
 ## Why?
-In a large Nativescript project I have trouble getting the debugger to work. I seem to be not the only one, as I've found
-many online articles, Stack Overflow questions and GitHub issues about:
+In a large Nativescript project I have trouble getting the debugger to work for Vue web components. I seem to be not the
+only one, as I've found many online articles, Stack Overflow questions and GitHub issues about:
 
 - Breakpoint jumping when setting
 - Source maps not correctly generated
