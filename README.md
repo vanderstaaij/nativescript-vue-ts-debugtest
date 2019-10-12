@@ -64,7 +64,6 @@ code base to focus on getting this to work.
 
 ## Breakpoint setting in TypeScript file (successful)
 
-```
 Result when setting a breakpoint in /app/components/mixin.ts, line 6:
 
 ```
