@@ -67,18 +67,48 @@ code base to focus on getting this to work.
 Result when setting a breakpoint in /app/components/mixin.ts, line 6:
 
 ```
-→ To target: "{\"id\":74,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":21,\"columnNumber\":17}}"
-← From target: {"id":67,"result":{"breakpointId":"2:324:12:file:\\/\\/\\/data\\/data\\/org\\.nativescript\\.debugtest\\/files\\/app\\/bundle\\.js","locations":[{"scriptId":"8","lineNumber":324,"columnNumber":12}]}}
-← From target: {"id":68,"result":{"breakpointId":"2:21:17:file:\\/\\/\\/data\\/data\\/org\\.nativescript\\.debugtest\\/files\\/app\\/bundle\\.js","locations":[{"scriptId":"8","lineNumber":24,"columnNumber":6}]}}
-← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":69}
-← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":70}
-← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":71}
-← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":72}
-← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":73}
-← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":74}
+From client: setBreakpoints({"source":{"name":"mixin.ts","path":"/Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/mixin.ts"},"lines":[6],"breakpoints":[{"line":6}],"sourceModified":false})
+To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"setBreakpointsRequest","data":{"Versions.DebugAdapterCore":"6.7.46","fileExt":".ts"}}}
+SourceMaps.setBP: Mapped /Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/mixin.ts to /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js
+SourceMaps.setBP: Mapped /Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/mixin.ts:6:1 to /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js:325:13
+Paths.setBP: Resolved /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js to file:///data/data/org.nativescript.debugtest/files/app/bundle.js
+→ To target: "{\"id\":91,\"method\":\"Debugger.removeBreakpoint\",\"params\":{\"breakpointId\":\"2:21:17:file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\"}}"
+← From target: {"id":91,"result":{}}
+→ To target: "{\"id\":92,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":324,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":325,\"columnNumber\":0},\"restrictToFunction\":false}}"
+→ To target: "{\"id\":93,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":21,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":22,\"columnNumber\":0},\"restrictToFunction\":false}}"
+→ To target: "{\"id\":94,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":21,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":22,\"columnNumber\":0},\"restrictToFunction\":false}}"
+→ To target: "{\"id\":95,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":21,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":22,\"columnNumber\":0},\"restrictToFunction\":false}}"
+→ To target: "{\"id\":96,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":21,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":22,\"columnNumber\":0},\"restrictToFunction\":false}}"
+→ To target: "{\"id\":97,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":21,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":22,\"columnNumber\":0},\"restrictToFunction\":false}}"
+→ To target: "{\"id\":98,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":21,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":22,\"columnNumber\":0},\"restrictToFunction\":false}}"
+→ To target: "{\"id\":99,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":21,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":22,\"columnNumber\":0},\"restrictToFunction\":false}}"
+← From target: {"id":92,"result":{"locations":[]}}
+→ To target: "{\"id\":100,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":324,\"columnNumber\":12}}"
+← From target: {"id":93,"result":{"locations":[]}}
+→ To target: "{\"id\":101,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":21,\"columnNumber\":17}}"
+← From target: {"id":94,"result":{"locations":[]}}
+→ To target: "{\"id\":102,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":21,\"columnNumber\":17}}"
+← From target: {"id":95,"result":{"locations":[]}}
+→ To target: "{\"id\":103,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":21,\"columnNumber\":17}}"
+← From target: {"id":96,"result":{"locations":[]}}
+→ To target: "{\"id\":104,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":21,\"columnNumber\":17}}"
+← From target: {"id":97,"result":{"locations":[]}}
+→ To target: "{\"id\":105,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":21,\"columnNumber\":17}}"
+← From target: {"id":98,"result":{"locations":[]}}
+→ To target: "{\"id\":106,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":21,\"columnNumber\":17}}"
+← From target: {"id":99,"result":{"locations":[]}}
+→ To target: "{\"id\":107,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":21,\"columnNumber\":17}}"
+← From target: {"id":100,"result":{"breakpointId":"2:324:12:file:\\/\\/\\/data\\/data\\/org\\.nativescript\\.debugtest\\/files\\/app\\/bundle\\.js","locations":[{"scriptId":"8","lineNumber":324,"columnNumber":12}]}}
+← From target: {"id":101,"result":{"breakpointId":"2:21:17:file:\\/\\/\\/data\\/data\\/org\\.nativescript\\.debugtest\\/files\\/app\\/bundle\\.js","locations":[{"scriptId":"8","lineNumber":24,"columnNumber":6}]}}
+← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":102}
+← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":103}
+← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":104}
+← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":105}
+← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":106}
+← From target: {"error":{"code":-32000,"message":"Breakpoint at specified location already exists."},"id":107}
 SourceMaps.setBP: Mapped /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js:325:13 to /Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/mixin.ts:6
-To client: {"seq":0,"type":"response","request_seq":31,"command":"setBreakpoints","success":true,"body":{"breakpoints":[{"id":1000,"verified":true,"line":6,"column":13}]}}
-To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"ClientRequest/setBreakpoints","data":{"Versions.DebugAdapterCore":"6.7.46","successful":"true","timeTakenInMilliseconds":"279.80327","requestType":"request"}}}
+To client: {"seq":0,"type":"response","request_seq":33,"command":"setBreakpoints","success":true,"body":{"breakpoints":[{"id":1000,"verified":true,"line":6,"column":13}]}}
+To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"ClientRequest/setBreakpoints","data":{"Versions.DebugAdapterCore":"6.7.46","successful":"true","timeTakenInMilliseconds":"271.1162","requestType":"request"}}}
 ```
 
 Result of hitting the breakpoint during execution:
