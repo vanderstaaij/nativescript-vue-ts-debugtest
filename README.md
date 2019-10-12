@@ -149,7 +149,13 @@ To client: {"seq":0,"type":"response","request_seq":35,"command":"setBreakpoints
 To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"ClientRequest/setBreakpoints","data":{"Versions.DebugAdapterCore":"6.7.46","successful":"true","timeTakenInMilliseconds":"137.606582","requestType":"request"}}}
 ```
 
-Note: states *can't map*
+Note:
+
+- states *can't map*
+- The following line seems odd, as at 22:18 in bundle.js there is no similar line of code compared to the breakpointed line:
+```
+SourceMaps.setBP: Mapped /Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/Home.vue:34:1 to /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js:22:18
+```
 
 Result of trying to hit the breakpoint in execution:
 
