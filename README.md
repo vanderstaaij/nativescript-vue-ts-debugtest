@@ -11,7 +11,7 @@ Repo for testing debugging with:
 In a large Nativescript project I have trouble getting the debugger to work. I seem to be not the only one, as I've found
 many online articles, Stack Overflow questions and GitHub issues about:
 
-- Visual Studio code breakpoints jumping lines
+- Breakpoint jumping when setting
 - Source maps not correctly generated
 - Webpack loaders not working properly
 
@@ -31,7 +31,7 @@ code base to focus on getting this to work.
 ## What I'm not able to do:
 
 - Get application execution to halt on breakpoints in source .vue files
-- Get application execution to halt on breakpoints in source .ts files *in my big project project*
+- Get application execution to halt on breakpoints in source .ts files *in my big project*
 
 ## What have I done so far?
 
@@ -56,8 +56,8 @@ code base to focus on getting this to work.
         "--no-hmr",   // I don't want HMR (yet) - at least not for debugging
         "--log=trace" // Print detailed diagnostic log for the execution of the current command
     ],
-    // "diagnosticLogging": true, // I don't want diagnostics logging to a file, just put something on the console
-    // Enable verbose tracing of messages over Chrome debugging protocol
+    // Enable verbose tracing of messages over Chrome debugging protocol - shows source mapping results for breakpoint setting
     "trace": "verbose"
 }
 ```
+
