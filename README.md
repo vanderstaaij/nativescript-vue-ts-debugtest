@@ -126,7 +126,7 @@ Visual proof:
 ![alt text](readme-images/breakpoint-hit-in-mixins-ts.png "Breakpoint hit in mixins.ts")
 
 
-## Breakpoint setting in Vue file
+## Breakpoint setting in Vue file (unsuccessful)
 
 ```
 From client: setBreakpoints({"source":{"name":"Home.vue","path":"/Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/Home.vue"},"lines":[34],"breakpoints":[{"line":34}],"sourceModified":false})
@@ -151,7 +151,8 @@ To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetr
 
 Note:
 
-- states *can't map*
+- breakpoint indicator is set in source code
+- logging however states *can't map*
 - The following line seems odd, as at 22:18 in bundle.js there is no similar line of code compared to the breakpointed line:
 ```
 SourceMaps.setBP: Mapped /Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/Home.vue:34:1 to /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js:22:18
@@ -169,3 +170,5 @@ To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout",
 To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"0\n","source":{"name":"index.js","path":"/Users/eric/GIT/nativescript-vue-ts-debugtest/node_modules/nativescript-vue/dist/index.js"},"line":14241,"column":5}}
 ```
 - Using _debugger;_ statement works - code breaks on the proper point
+
+As workaround this is fine now, but I do want to get this solved...
