@@ -26,12 +26,11 @@ code base to focus on getting this to work.
 - Launch my app in debug mode from the shell and attach from VS Code
 - Launch my app in debug mode from VS Code directly
 - Set breakpoints
-- Get application execution to halt on breakpoints in source .ts files *in my test project*
+- Get application execution to halt on breakpoints in source .ts files
 
 ## What I'm not able to do:
 
 - Get application execution to halt on breakpoints in source .vue files
-- Get application execution to halt on breakpoints in source .ts files *in my big project*
 
 ## What have I done so far?
 
@@ -156,13 +155,9 @@ Note:
 ```
 SourceMaps.setBP: Mapped /Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/Home.vue:34:1 to /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js:22:18
 ```
-- Using _debugger;_ statement works
 
 Checked:
 - https://github.com/microsoft/vscode-chrome-debug/issues/247
-
-Did:
-- set Debugger statements to check if hit properly
 
 Result of trying to hit the breakpoint in execution:
 
@@ -172,3 +167,4 @@ To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout",
 0 [file:///data/data/org.nativescript.debugtest/files/app/vendor.js]
 To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"0\n","source":{"name":"index.js","path":"/Users/eric/GIT/nativescript-vue-ts-debugtest/node_modules/nativescript-vue/dist/index.js"},"line":14241,"column":5}}
 ```
+- Using _debugger;_ statement works - code breaks on the proper point
