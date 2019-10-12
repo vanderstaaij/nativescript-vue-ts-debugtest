@@ -60,6 +60,7 @@ code base to focus on getting this to work.
     // results for breakpoint setting
     "trace": "verbose"
 }
+```
 
 ## Breakpoint setting in TypeScript file (successful)
 
