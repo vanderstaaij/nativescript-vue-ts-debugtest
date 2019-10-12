@@ -45,27 +45,27 @@
             "sourceMaps": true,
             "watch": false
         },
-        {
-            "name": "Launch on Android",
-            "type": "nativescript",
-            "request": "launch",
-            "platform": "android",
-            "appRoot": "${workspaceRoot}",
-            "sourceMaps": true,
-            "watch": true,
-            "sourceMapPathOverrides": {
-                "webpack:///*": "${workspaceRoot}/app/*"
-            },
-            "tnsArgs": [
-                "--bundle",
-                "--no-hmr",
-                "--log=trace"
-            ],
-            // "diagnosticLogging": true,/
+{
+    "name": "Launch on Android",
+    "type": "nativescript",
+    "request": "launch",
+    "platform": "android",
+    "appRoot": "${workspaceRoot}",
+    "sourceMaps": true,
+    "watch": true,
+    "sourceMapPathOverrides": {
+        "webpack:///*": "${workspaceRoot}/app/*"
+    },
+    "tnsArgs": [
+        "--bundle",
+        "--no-hmr",
+        "--log=trace" // Print detailed diagnostic log for the execution of the current command
+    ],
+    // "diagnosticLogging": true,/
 
-            // Enable verbose tracing of messages over Chrome debugging protocol
-            "trace": "verbose"
-        },
+    // Enable verbose tracing of messages over Chrome debugging protocol
+    "trace": "verbose"
+},
         {
             "name": "Test on Android",
             "type": "nativescript",
