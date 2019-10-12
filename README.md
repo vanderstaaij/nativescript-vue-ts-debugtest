@@ -15,8 +15,16 @@ only one, as I've found many online articles, Stack Overflow questions and GitHu
 - Source maps not correctly generated
 - Webpack loaders not working properly
 
+E.g.:
+
+- https://forum.vuejs.org/t/debugging-vue-files-with-visual-studio-code/8022/6
+- 
+
 Next to that, it looks like debugging documentation from Nativescript is outdated. It proposes e.g. to use the TypeScript
-plugin for NativeScript, but this is deprecated in favor of the TNS 6 bundle workflow. 
+plugin for NativeScript, but this is deprecated in favor of the TNS 6 bundle workflow.
+
+- https://docs.nativescript.org/tooling/debugging/debugging
+- https://docs.nativescript.org/tooling/debugging/chrome-devtools
 
 I really really really want step debugging, so I created a separate Nativescript project without my other project's full
 code base to focus on getting this to work.
