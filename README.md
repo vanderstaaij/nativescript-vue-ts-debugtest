@@ -56,7 +56,8 @@ code base to focus on getting this to work.
         "--no-hmr",   // I don't want HMR (yet) - at least not for debugging
         "--log=trace" // Print detailed diagnostic log for the execution of the current command
     ],
-    // Enable verbose tracing of messages over Chrome debugging protocol - shows source mapping results for breakpoint setting
+    // Enable verbose tracing of messages over Chrome debugging protocol - shows source mapping
+    // results for breakpoint setting
     "trace": "verbose"
 }
 ```
