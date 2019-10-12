@@ -156,6 +156,13 @@ Note:
 ```
 SourceMaps.setBP: Mapped /Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/Home.vue:34:1 to /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js:22:18
 ```
+- Using _debugger;_ statement works
+
+Checked:
+- https://github.com/microsoft/vscode-chrome-debug/issues/247
+
+Did:
+- set Debugger statements to check if hit properly
 
 Result of trying to hit the breakpoint in execution:
 

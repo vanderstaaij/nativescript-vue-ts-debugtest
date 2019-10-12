@@ -31,7 +31,9 @@
         },
         methods: {
             foo : () => {
+                debugger;
                 console.log(FB.foo);
+                debugger;
             }
         }
     };
