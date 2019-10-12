@@ -134,11 +134,19 @@ To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetr
 SourceMaps.setBP: Mapped /Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/Home.vue to /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js
 SourceMaps.setBP: Mapped /Users/eric/GIT/nativescript-vue-ts-debugtest/app/components/Home.vue:34:1 to /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js:22:18
 Paths.setBP: Resolved /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js to file:///data/data/org.nativescript.debugtest/files/app/bundle.js
-→ To target: "{\"id\":34,\"method\":\"Debugger.removeBreakpoint\",\"params\":{\"breakpointId\":\"2:324:12:file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\"}}"
-← From target: {"id":34,"result":{}}
-→ To target: "{\"id\":35,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":21,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":22,\"columnNumber\":0},\"restrictToFunction\":false}}"
-→ To target: "{\"id\":36,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":324,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":325,\"columnNumber\":0},\"restrictToFunction\":false}}"
-
+→ To target: "{\"id\":112,\"method\":\"Debugger.removeBreakpoint\",\"params\":{\"breakpointId\":\"2:324:12:file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\"}}"
+← From target: {"id":112,"result":{}}
+→ To target: "{\"id\":113,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":21,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":22,\"columnNumber\":0},\"restrictToFunction\":false}}"
+→ To target: "{\"id\":114,\"method\":\"Debugger.getPossibleBreakpoints\",\"params\":{\"start\":{\"scriptId\":\"8\",\"lineNumber\":324,\"columnNumber\":0},\"end\":{\"scriptId\":\"8\",\"lineNumber\":325,\"columnNumber\":0},\"restrictToFunction\":false}}"
+← From target: {"id":113,"result":{"locations":[]}}
+→ To target: "{\"id\":115,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":21,\"columnNumber\":17}}"
+← From target: {"id":114,"result":{"locations":[]}}
+→ To target: "{\"id\":116,\"method\":\"Debugger.setBreakpointByUrl\",\"params\":{\"urlRegex\":\"file:\\\\/\\\\/\\\\/data\\\\/data\\\\/org\\\\.nativescript\\\\.debugtest\\\\/files\\\\/app\\\\/bundle\\\\.js\",\"lineNumber\":324,\"columnNumber\":12}}"
+← From target: {"id":115,"result":{"breakpointId":"2:21:17:file:\\/\\/\\/data\\/data\\/org\\.nativescript\\.debugtest\\/files\\/app\\/bundle\\.js","locations":[{"scriptId":"8","lineNumber":24,"columnNumber":6}]}}
+← From target: {"id":116,"result":{"breakpointId":"2:324:12:file:\\/\\/\\/data\\/data\\/org\\.nativescript\\.debugtest\\/files\\/app\\/bundle\\.js","locations":[{"scriptId":"8","lineNumber":324,"columnNumber":12}]}}
+SourceMaps.setBP: Can't map /Users/eric/GIT/nativescript-vue-ts-debugtest/platforms/android/app/src/main/assets/app/bundle.js:25:7, keeping original line numbers.
+To client: {"seq":0,"type":"response","request_seq":35,"command":"setBreakpoints","success":true,"body":{"breakpoints":[{"id":1001,"verified":true,"line":34}]}}
+To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"ClientRequest/setBreakpoints","data":{"Versions.DebugAdapterCore":"6.7.46","successful":"true","timeTakenInMilliseconds":"137.606582","requestType":"request"}}}
 ```
 
 Note: states *can't map*
